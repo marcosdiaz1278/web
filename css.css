@@ -1,40 +1,42 @@
-{
+* {
     max-width: 100%;
     padding: 0px;
-    margin: 0PX;
+    margin: 0px;
+    box-sizing: border-box;
 }
-body{
-   /*modifique el color de fondo*/
-    
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-   background-color: rgb(0, 0, 0);
-}   
-#Container{
-    /*borde de pantalla- color. etc*/
-    width: 1400px;
-    margin: 0px auto;   
-    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
-header{
-    /*color de titulo*/
-   background: linear-gradient( to right, rgba(30, 255, 0, 0.76), rgb(42, 42, 42), rgb(0, 255, 149));
+
+#Container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+header {
+    background: linear-gradient(to right, rgba(30, 255, 0, 0.76), rgb(42, 42, 42), rgb(0, 255, 149));
     height: 100px;
     width: 100%;
     border-radius: 34px;
-    text-align:center;
+    text-align: center;
     line-height: 100px;
-    color: rgb(255, 255, 255);
+    color: white;
     border-bottom: 14px solid rgb(0, 0, 0);
 }
 
-
-nav ul li{
+nav ul li {
     float: left;
     list-style: none;
     margin: 10px;
     line-height: 30px;
 }
-.clearflix{
+
+.clearfix {
     clear: both;
 }
 
@@ -47,7 +49,7 @@ nav ul li{
 }
 
 .gallery-item {
-    background: linear-gradient( to right, rgba(0, 255, 200, 0.671), rgb(80, 80, 80), yellow);
+    background: linear-gradient(to right, rgba(0, 255, 200, 0.671), rgb(80, 80, 80), yellow);
     border: 1px solid #444444c7;
     border-radius: 8px;
     overflow: hidden;
@@ -59,20 +61,52 @@ nav ul li{
 .gallery-item img {
     width: 100%;
     height: auto;
+    border-bottom: 1px solid #000;
 }
 
 .gallery-item p {
     margin: 10px 0;
-    font-size: 13px;
-   color: rgb(255, 255, 255);
-    size: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
 }
+
+.gallery-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-item li {
+    margin: 5px 0;
+}
+
+.gallery-item a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gallery-item a:hover {
+    text-decoration: underline;
+}
+
 .letreros {
     width: 100%;
-    height: auto;
-color: rgb(255, 0, 0);
-text-align:center;
-
-
+    text-align: center;
+    color: red;
+    margin-top: 20px;
 }
 
+@media (max-width: 600px) {
+    .gallery-item {
+        width: 90%;
+    }
+
+    header {
+        font-size: 18px;
+        line-height: 1.2;
+        height: auto;
+        padding: 20px 0;
+    }
+}
