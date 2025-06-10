@@ -102,7 +102,7 @@ marquee {
     padding: 10px 0;
 }
 
-/* Responsive para pantallas pequeñas */
+/* responsivo */
 @media (max-width: 768px) {
     header {
         font-size: 20px;
@@ -117,3 +117,42 @@ marquee {
         width: 90%;
     }
 }
+/* Diseño adaptativo  */
+
+/*  móvil */
+@media (max-width: 768px) {
+ 
+  .imagenes {
+    width: calc(50% - 20px);
+  }
+  
+  .imagenes {
+    margin: 10px;
+  }
+}
+
+/*  dispositivos pequeños */
+@media (max-width: 480px) {
+ 
+  .imagenes {
+    width: 100%;
+  }
+ 
+  .galeria img {
+    margin: 10px 0;
+  }
+ 
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Para dispositivos grandes */
+@media (min-width: 1200px) {
+
+  .imagenes {
+    width: calc(25% - 20px);
+  }
+}
+  .imagenes {
+    margin: 20px;}
